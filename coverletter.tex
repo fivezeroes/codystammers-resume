@@ -1,0 +1,144 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{profile}
+\name{Cody}{Stammers}
+\position{DevOps{\enskip\cdotp\enskip}System Administrator{\enskip\cdotp\enskip}Software Engineer}
+\address{Charlotte, NC 28217}
+
+
+
+
+
+
+
+%\homepage{www.posquit0.com}
+%\github{posquit0}
+
+\mobile{(864) 401-9866}
+\email{codystammers@gmail.com}
+%\homepage{www.posquit0.com}
+%\github{posquit0}
+\linkedin{cody-stammers}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world. Now!"}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  %{Company Recruitment Team}
+  {Data Driven Safety}
+  %{Data Driven Safety\\9525 Birkdale Crossing Dr.\\Huntersville, NC 28078}
+  {9525 Birkdale Crossing Dr.\\Huntersville, NC 28078}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Junior Software Developer}
+% How the letter is opened
+%\letteropening{Dear Mr./Ms./Dr. LastName,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Résumé}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Cody Stammers~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+%\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+Working with computers has been something of a passion to me since I was able to build my own computer in the 8\textsuperscript{th} grade, and I recently had the honor of graduating from Clemson University with a B.S. in Computer Science. Most of my experience with computers outside of school has been in personal projects to help script away many tasks and make life easier for myself and my family.
+
+\lettersection{Why Data Driven Safety?}
+I have several years experience with most of the technologies mentioned for this position, especially Python, Bash, and Linux (Debian and Ubuntu in particular) and am very interested in a position where I can use my skills professionally. I feel that it is important that I am able to contribute in a meaningful manor to the company I work for, and DDS seems like a great opportunity to do just that.
+
+\lettersection{Why Me?}
+I would be a good fit for this position because I am the type of person who in my free time likes to tinker with home automation via a handful of Raspberry Pis, run custom software on my smart devices and game consoles, and maintain a small set of servers for my home lab to provide various services to family and friends - such as an ad-blocking via DNS, media and system backups and cross-platform compilation for various projects. I'm a self starter who likes to see a goal to its completion, and go above and beyond with creating a presentation that doesn't just work, but works well, and gives more than the minimum necessary to call the job done.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}

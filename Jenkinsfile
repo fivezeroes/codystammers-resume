@@ -9,6 +9,7 @@ pipeline {
          }
          steps {
              sh 'xelatex resume.tex'
+             sh 'cp /var/jenkins_home/codystammers-resume/resume.pdf /home'
          }
       }
    }
